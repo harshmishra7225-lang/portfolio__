@@ -12,8 +12,8 @@ export default function SkillsPage() {
         <AnimatedSection>
           <SectionHeading
             eyebrow="Skills"
-            title="A balanced toolkit for building useful digital experiences."
-            description="Technical foundations, creative tooling, and collaboration habits presented in a clear, scannable way."
+            title="A practical stack for AI-driven, hardware-aware software."
+            description="Skills are organized around the strongest resume themes: programming, AI/ML, robotics, IoT, research tooling and security-aware systems."
           />
         </AnimatedSection>
 
@@ -28,8 +28,8 @@ export default function SkillsPage() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Working Style"
-            title="Technical ability with calm communication."
-            description="A portfolio is stronger when it shows how you work, not only what tools you know."
+            title="Research curiosity with implementation discipline."
+            description="Harsh's work combines experimentation, scientific reading and hands-on system building."
             inverse
           />
           <div className="mt-10 grid gap-5 md:grid-cols-3">

@@ -12,23 +12,23 @@ export default function ContactPage() {
         <AnimatedSection>
           <SectionHeading
             eyebrow="Contact Me"
-            title="Let’s start a clear, thoughtful conversation."
-            description="For collaborations, internships, project ideas, or a quick introduction, this is the easiest place to reach out."
+            title="Let's talk about AI, robotics or security-minded systems."
+            description="For internships, research collaborations, robotics projects, AI/ML ideas or a quick professional introduction."
           />
         </AnimatedSection>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
           <AnimatedSection>
             <Card className="h-full bg-ink p-7 text-white sm:p-9">
-              <h2 className="text-2xl font-semibold">Contact Details</h2>
+              <h2 className="font-display text-2xl font-semibold">Contact Details</h2>
               <p className="mt-4 leading-7 text-white/68">
                 Prefer a direct channel? These links are ready for a quick hello, portfolio review,
-                or project conversation.
+                internship conversation or project discussion.
               </p>
               <div className="mt-8 space-y-5">
                 {contactDetails.map((detail) => (
                   <div key={detail.label}>
-                    <p className="text-sm text-white/52">{detail.label}</p>
+                    <p className="font-code text-sm font-bold uppercase text-cyan">{detail.label}</p>
                     <a
                       href={detail.href}
                       className="focus-ring mt-1 inline-block rounded-sm text-lg font-medium text-white hover:text-sun"

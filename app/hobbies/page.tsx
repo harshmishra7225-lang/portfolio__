@@ -1,4 +1,5 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { BookShelf } from "@/components/BookShelf";
 import { HobbyMarquee } from "@/components/HobbyMarquee";
 import { PageTransition } from "@/components/PageTransition";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -10,19 +11,23 @@ export default function HobbiesPage() {
         <AnimatedSection>
           <SectionHeading
             eyebrow="Hobbies"
-            title="A lively gallery of the things that recharge creativity."
-            description="Personal interests add texture to the work, bringing fresh perspective, energy, and a broader sense of craft."
+            title="Reading, astronomy, anime and drawing in motion."
+            description="A more personal interactive page inspired by the hobbies you shared, with automatic motion and hover interaction."
           />
         </AnimatedSection>
       </section>
 
       <HobbyMarquee />
 
-      <AnimatedSection className="mx-auto max-w-5xl px-5 py-16 text-center sm:px-8 lg:px-10">
-        <p className="text-lg leading-8 text-charcoal/78">
-          Outside of technical work, these small rituals keep curiosity alive and make space for
-          better ideas to arrive.
-        </p>
+      <AnimatedSection className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
+        <SectionHeading
+          eyebrow="Reading Shelf"
+          title="Books that shape strategy and ambition."
+          description="Inspired by your reading reference, this section avoids static book covers and uses interactive book cards that fit the portfolio design."
+        />
+        <div className="mt-10">
+          <BookShelf />
+        </div>
       </AnimatedSection>
     </PageTransition>
   );

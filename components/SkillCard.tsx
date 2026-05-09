@@ -20,16 +20,16 @@ export function SkillCard({ group, index }: SkillCardProps) {
       <Card className="h-full p-6 sm:p-7">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-clay">
+            <p className="font-code text-sm font-bold uppercase text-electric">
               {group.label}
             </p>
-            <h2 className="mt-3 text-2xl font-semibold text-ink">{group.title}</h2>
+            <h2 className="font-display mt-3 text-2xl font-semibold text-ink">{group.title}</h2>
           </div>
           <div className="flex flex-wrap gap-2">
             {group.badges.map((badge) => (
               <span
                 key={badge}
-                className="rounded-full bg-mist px-3 py-1 text-xs font-semibold text-forest"
+                className="rounded-full bg-ink px-3 py-1 text-xs font-semibold text-cyan"
               >
                 {badge}
               </span>
@@ -54,7 +54,7 @@ export function SkillCard({ group, index }: SkillCardProps) {
                   whileInView={{ width: `${skill.level}%` }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.9, delay: 0.12 }}
-                  className="h-full rounded-full bg-gradient-to-r from-forest via-teal to-clay"
+                  className="h-full rounded-full bg-gradient-to-r from-cyan via-rose to-sun"
                 />
               </div>
             </div>

@@ -6,9 +6,9 @@ export function Footer() {
     <footer className="border-t border-ink/10 bg-porcelain px-5 py-10 sm:px-8 lg:px-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div>
-          <p className="text-lg font-bold text-ink">{profile.logo}</p>
+          <p className="font-code text-lg font-bold text-ink">{profile.logo}</p>
           <p className="mt-2 text-sm text-charcoal/65">
-            Designed with clarity, warmth, and careful attention to detail.
+            Robotics, AI/ML and cybersecurity portfolio for {profile.name}.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">

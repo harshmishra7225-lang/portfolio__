@@ -4,9 +4,9 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Your Name | Portfolio",
+  title: "Harsh Kumar Mishra | AI, Robotics and Cybersecurity Portfolio",
   description:
-    "A modern personal portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
+    "Portfolio of Harsh Kumar Mishra, a University of Delhi B.Tech student focused on robotics, AI/ML, cybersecurity, IoT and scientific computing.",
   metadataBase: new URL("https://example.com")
 };
 

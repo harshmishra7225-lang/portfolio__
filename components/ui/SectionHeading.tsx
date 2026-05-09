@@ -27,7 +27,7 @@ export function SectionHeading({
       </p>
       <h1
         className={cn(
-          "text-balance mt-4 text-4xl font-semibold tracking-normal sm:text-5xl",
+          "font-display text-balance mt-4 text-4xl font-semibold tracking-normal sm:text-5xl",
           inverse ? "text-white" : "text-ink"
         )}
       >

@@ -8,26 +8,50 @@ export type SkillGroup = {
   }>;
 };
 
-// Replace these placeholders with your real name, bio, links, and image paths.
+export type ProjectItem = {
+  title: string;
+  label: string;
+  description: string;
+  stack: string[];
+};
+
+export type InterestItem = {
+  title: string;
+  description: string;
+  accent: string;
+};
+
+export type HobbyItem = {
+  title: string;
+  caption: string;
+  description: string;
+  image: string;
+  alt: string;
+  accent: string;
+};
+
 export const profile = {
-  name: "Your Name",
-  logo: "YN",
-  headline: "Aspiring full-stack developer crafting thoughtful web experiences.",
+  name: "Harsh Kumar Mishra",
+  logo: "HKM",
+  headline: "Robotics, AI/ML and cybersecurity focused developer.",
   intro:
-    "I enjoy turning ideas into polished, accessible products with clean code, careful design, and a strong sense of user experience.",
+    "I build intelligent systems that connect software, sensors, automation and thoughtful user experience. My work sits at the intersection of robotics, applied machine learning, privacy-first assistants and scientific computing.",
   summary:
-    "A portfolio for someone who values clarity, practical problem-solving, and design that feels effortless. Customize the copy, projects, and images to make it fully yours.",
+    "B.Tech student in Information Technology and Mathematical Innovation at the University of Delhi, with internship experience across Robotics, IoT and Machine Learning. I like turning research-heavy ideas into practical systems that people can actually use.",
   avatar: "/images/profile-placeholder.png",
+  heroImage: "/images/hero-lab.png",
   aboutIntro:
-    "I am a motivated learner and builder with a growing focus on modern web development, product thinking, and clean user interfaces. My work combines technical curiosity with a calm, reliable approach to collaboration.",
+    "I am Harsh Kumar Mishra, a B.Tech student at the University of Delhi studying Information Technology and Mathematical Innovation with a minor in Economics. I enjoy work that blends engineering depth with real-world usefulness.",
   background:
-    "My background includes academic projects, self-directed learning, and hands-on practice with frontend and backend concepts. I enjoy understanding how systems fit together, from interface details to deployment workflows.",
+    "My experience includes robotics and IoT research, AI-driven recruitment models, autonomous robotic systems, real-time monitoring, computer vision, NLP-powered desktop assistants and scientific computing research.",
   personalStory:
-    "I started exploring technology by trying to make simple pages feel more useful and human. Over time, that curiosity grew into a deeper interest in building products that are elegant, readable, and genuinely helpful.",
-  email: "hello@example.com",
-  phone: "+1 (555) 000-0000",
-  linkedin: "https://www.linkedin.com/in/your-profile",
-  github: "https://github.com/your-username"
+    "I am especially drawn to systems that feel intelligent but remain practical: offline AI assistants, sensor networks, anomaly detection, sign-language recognition, and privacy-aware automation. Long term, I want to build reliable AI products for robotics, cybersecurity and scientific discovery.",
+  email: "harsh.mishra7225@cic.du.ac.in",
+  phone: "+91 9958737531",
+  location: "Delhi, India",
+  degree: "B.Tech, Information Technology and Mathematical Innovation",
+  university: "University of Delhi",
+  graduation: "August 2026"
 };
 
 export const navItems = [
@@ -38,174 +62,253 @@ export const navItems = [
   { label: "Contact Me", href: "/contact" }
 ];
 
+export const coreInterests: InterestItem[] = [
+  {
+    title: "Robotics",
+    description: "Autonomous systems, sensor fusion, real-time monitoring and adaptive control.",
+    accent: "from-cyan to-sun"
+  },
+  {
+    title: "AI/ML",
+    description: "Computer vision, NLP, predictive analytics, anomaly detection and model integration.",
+    accent: "from-plum to-rose"
+  },
+  {
+    title: "Cybersecurity",
+    description: "Privacy-first assistants, secure automation, anomaly detection and resilient systems.",
+    accent: "from-aurora to-teal"
+  }
+];
+
 export const featuredSummary = [
   {
-    label: "Focus",
-    title: "Modern Web",
+    label: "Current Focus",
+    title: "AI Systems",
     description:
-      "Building responsive interfaces with a strong foundation in component architecture, accessibility, and performance."
+      "Building privacy-first AI workflows, context-aware assistants and machine-learning powered tools that solve practical problems."
   },
   {
-    label: "Approach",
-    title: "Clear Thinking",
+    label: "Engineering Edge",
+    title: "Robotics and IoT",
     description:
-      "Breaking complex goals into small, testable steps while keeping the user experience at the center."
+      "Hands-on work with Arduino, ESP32, sensor calibration, Bluetooth-controlled robots and real-time monitoring systems."
   },
   {
-    label: "Personality",
-    title: "Warm Professional",
+    label: "Research Mindset",
+    title: "Scientific Computing",
     description:
-      "Communicating with care, learning quickly, and bringing steady energy to collaborative work."
+      "Interested in human-AI interaction, big data analytics, high-performance computing and AI for scientific research."
   }
 ];
 
 export const storyHighlights = [
-  { label: "Current Role", value: "Student / Emerging Developer" },
-  { label: "Education", value: "Computer Science and Web Design" },
-  { label: "Interests", value: "Frontend, product design, clean systems" },
-  { label: "Goal", value: "Build useful products with thoughtful teams" }
+  { label: "Degree", value: profile.degree },
+  { label: "University", value: profile.university },
+  { label: "Expected Graduation", value: profile.graduation },
+  { label: "Core Interests", value: "Robotics, AI/ML, Cybersecurity" }
 ];
 
 export const milestones = [
   {
-    year: "2023",
-    title: "Started building web projects",
+    year: "Aug 2026",
+    title: "B.Tech at University of Delhi",
     description:
-      "Created foundational layouts and interactive pages while learning HTML, CSS, JavaScript, and responsive design."
+      "Information Technology and Mathematical Innovation with a minor in Economics, building a foundation across computing, math, systems and analytical thinking."
   },
   {
-    year: "2024",
-    title: "Expanded into modern frameworks",
+    year: "Jul-Sep 2024",
+    title: "Robotics and IoT Intern at Hiprotech, Inc",
     description:
-      "Explored React, Next.js, TypeScript, and component-driven development through practical portfolio and coursework projects."
+      "Researched robotics, IoT, AI and automation while working on sensor networks, ESP32, Arduino, real-time monitoring, adaptive robotics and anomaly detection."
   },
   {
-    year: "2025",
-    title: "Focused on polish and accessibility",
+    year: "Sep-Nov 2024",
+    title: "Machine Learning Intern at Bullhorn Consultants",
     description:
-      "Improved UI quality, form validation, semantic markup, motion design, and deployment workflows."
+      "Worked on data preprocessing, feature engineering and predictive models for recruitment automation, candidate selection and job matching."
   },
   {
-    year: "2026",
-    title: "Preparing for real-world opportunities",
+    year: "Ongoing",
+    title: "AI Assistant for Windows Workflows",
     description:
-      "Refining a professional portfolio, documenting projects clearly, and pursuing internships or junior developer roles."
+      "Developing a privacy-first assistant using Windows APIs, NLP models, Python frameworks and offline-friendly workflows for task automation and smart search."
+  },
+  {
+    year: "Project",
+    title: "Sign Language Detection App",
+    description:
+      "Built a real-time sign language detection application using TensorFlow, MediaPipe, computer vision and a user-friendly desktop interface."
   }
 ];
 
-// Update skill names and levels to reflect your actual proficiency.
+export const projects: ProjectItem[] = [
+  {
+    title: "AI Assistant",
+    label: "Privacy-first productivity",
+    description:
+      "A Windows-integrated assistant for task automation, smart search and context-aware suggestions using NLP models and local workflow integration.",
+    stack: ["Python", "Windows APIs", "Llama 3", "Mistral", "NLP"]
+  },
+  {
+    title: "Sign Language Detection",
+    label: "Computer vision app",
+    description:
+      "A real-time gesture recognition application that processes hand landmarks and recognizes sign language symbols through deep learning.",
+    stack: ["TensorFlow", "MediaPipe", "Computer Vision", "Python"]
+  },
+  {
+    title: "Smart Surveillance System",
+    label: "AI anomaly detection",
+    description:
+      "An AI-powered surveillance concept for real-time anomaly detection, designed around sensor intelligence and automated decision support.",
+    stack: ["AI/ML", "Sensors", "Anomaly Detection", "IoT"]
+  },
+  {
+    title: "Image Stitching Tool",
+    label: "MATLAB vision project",
+    description:
+      "Built an image stitching interface using SURF feature detection and RANSAC affine transformation to align and merge images.",
+    stack: ["MATLAB", "SURF", "RANSAC", "UI"]
+  }
+];
+
 export const skillGroups: SkillGroup[] = [
   {
     label: "Programming",
-    title: "Programming Foundations",
-    badges: ["TypeScript", "JavaScript", "Problem Solving"],
+    title: "Languages and Core Logic",
+    badges: ["Python", "C", "SQL", "MATLAB"],
     skills: [
-      { name: "TypeScript", level: 82 },
-      { name: "JavaScript", level: 86 },
-      { name: "Python", level: 74 },
-      { name: "Data Structures", level: 70 }
+      { name: "Python", level: 88 },
+      { name: "C", level: 72 },
+      { name: "SQL", level: 76 },
+      { name: "MATLAB", level: 78 }
     ]
   },
   {
-    label: "Web Development",
-    title: "Frontend and App Development",
-    badges: ["Next.js", "React", "Responsive UI"],
+    label: "AI/ML",
+    title: "Applied Machine Intelligence",
+    badges: ["TensorFlow", "MediaPipe", "NLP", "Sensor Fusion"],
     skills: [
-      { name: "React", level: 84 },
-      { name: "Next.js", level: 80 },
-      { name: "Tailwind CSS", level: 88 },
-      { name: "Accessibility", level: 78 }
+      { name: "Machine Learning", level: 84 },
+      { name: "Computer Vision", level: 82 },
+      { name: "NLP Models", level: 76 },
+      { name: "Predictive Analytics", level: 78 }
     ]
   },
   {
-    label: "Tools",
-    title: "Development Workflow",
-    badges: ["Git", "Vercel", "Figma"],
+    label: "Robotics and IoT",
+    title: "Hardware-Aware Systems",
+    badges: ["Arduino", "ESP32", "Automation"],
     skills: [
-      { name: "Git and GitHub", level: 82 },
-      { name: "Vercel Deployment", level: 78 },
-      { name: "Figma Basics", level: 72 },
-      { name: "Debugging", level: 80 }
+      { name: "Arduino and ESP32", level: 84 },
+      { name: "Sensor Calibration", level: 80 },
+      { name: "Real-time Monitoring", level: 82 },
+      { name: "Robotic Prototyping", level: 78 }
+    ]
+  },
+  {
+    label: "Tools and Data",
+    title: "Research and Development Stack",
+    badges: ["MySQL", "SQLite", "QGIS", "AutoDock Vina"],
+    skills: [
+      { name: "MySQL and SQLite", level: 78 },
+      { name: "REST APIs", level: 72 },
+      { name: "Scientific Data Analysis", level: 80 },
+      { name: "Research Communication", level: 84 }
+    ]
+  },
+  {
+    label: "Cybersecurity",
+    title: "Security-Aware Thinking",
+    badges: ["Privacy", "Anomaly Detection", "Resilience"],
+    skills: [
+      { name: "Privacy-first Design", level: 82 },
+      { name: "Anomaly Detection", level: 78 },
+      { name: "Secure Automation Concepts", level: 72 },
+      { name: "Systems Thinking", level: 84 }
     ]
   },
   {
     label: "Soft Skills",
     title: "Collaboration Strengths",
-    badges: ["Communication", "Ownership", "Learning"],
+    badges: ["Research", "Communication", "Ownership"],
     skills: [
-      { name: "Communication", level: 90 },
-      { name: "Adaptability", level: 86 },
-      { name: "Time Management", level: 82 },
-      { name: "Team Collaboration", level: 88 }
+      { name: "Interdisciplinary Collaboration", level: 88 },
+      { name: "Technical Communication", level: 86 },
+      { name: "Problem Solving", level: 90 },
+      { name: "Adaptability", level: 86 }
     ]
   }
 ];
 
 export const toolsHighlights = [
   {
-    title: "Readable Code",
+    title: "Production-Minded ML",
     description:
-      "Prefer simple component boundaries, descriptive naming, and patterns that are easy for another developer to extend."
+      "Experience moving beyond notebook experiments into model evaluation, integration thinking and practical decision support."
   },
   {
-    title: "Product Awareness",
+    title: "Human-AI Interaction",
     description:
-      "Think beyond the screen by considering user goals, navigation clarity, content hierarchy, and deployment quality."
+      "Interested in assistants, visualization and scientific computing interfaces that make complex systems easier to use."
   },
   {
-    title: "Growth Mindset",
+    title: "Research Breadth",
     description:
-      "Comfortable learning new tools, asking better questions, and improving work through feedback and iteration."
+      "Work spans robotics, recruitment automation, sign language recognition, image stitching, bioinformatics and nanotechnology review writing."
   }
 ];
 
-// Swap these image paths with your real hobby photos in public/images.
-export const hobbies = [
-  {
-    title: "Photography",
-    caption: "Framing quiet details",
-    description:
-      "Exploring light, composition, and everyday scenes that sharpen visual taste for interface design.",
-    image: "/images/hobby-photography.png",
-    alt: "Stylized camera and city-light hobby placeholder"
-  },
+export const hobbies: HobbyItem[] = [
   {
     title: "Reading",
-    caption: "Ideas between pages",
+    caption: "Books that sharpen strategy",
     description:
-      "Reading technology, design, and personal growth books to build broader perspective and better judgment.",
+      "Reading business, technology and self-improvement books to build judgment, discipline and long-term thinking.",
     image: "/images/hobby-reading.png",
-    alt: "Stylized open book hobby placeholder"
+    alt: "Bright illustrated reading desk with books",
+    accent: "from-sun to-clay"
   },
   {
-    title: "Travel",
-    caption: "Learning from places",
+    title: "Astronomy",
+    caption: "Curiosity at cosmic scale",
     description:
-      "Finding inspiration in new environments, architecture, culture, and the small patterns of daily life.",
-    image: "/images/hobby-travel.png",
-    alt: "Stylized travel landscape hobby placeholder"
+      "Following space, stars and big scientific questions that make engineering feel connected to something larger.",
+    image: "/images/hobby-astronomy.png",
+    alt: "Illustrated telescope under a star field",
+    accent: "from-cyan to-plum"
   },
   {
-    title: "Music",
-    caption: "Rhythm and focus",
+    title: "Watching Anime",
+    caption: "Story, motion and imagination",
     description:
-      "Using music to reset energy, stay focused, and bring a bit more rhythm into the creative process.",
-    image: "/images/hobby-music.png",
-    alt: "Stylized headphones and sound waves hobby placeholder"
+      "Enjoying expressive worlds, character arcs and visual storytelling that keep creativity playful and bold.",
+    image: "/images/hobby-anime.png",
+    alt: "Stylized anime-inspired screen and motion streaks",
+    accent: "from-rose to-sun"
   },
   {
-    title: "Fitness",
-    caption: "Discipline in motion",
+    title: "Drawing",
+    caption: "Sketching ideas into form",
     description:
-      "Staying active to build consistency, resilience, and a clearer mind for problem-solving.",
-    image: "/images/hobby-fitness.png",
-    alt: "Stylized running trail hobby placeholder"
+      "Using drawing to slow down, observe details and explore visual composition before ideas become interfaces.",
+    image: "/images/hobby-drawing.png",
+    alt: "Illustrated sketchbook with pencil and color shapes",
+    accent: "from-aurora to-cyan"
   }
+];
+
+export const bookStack = [
+  "The Personal MBA",
+  "Zero to One",
+  "48 Laws of Power",
+  "Rich Dad Poor Dad",
+  "The E-Myth Revisited"
 ];
 
 export const contactDetails = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}` },
-  { label: "LinkedIn", value: "linkedin.com/in/your-profile", href: profile.linkedin },
-  { label: "GitHub", value: "github.com/your-username", href: profile.github },
-  { label: "Phone", value: profile.phone, href: "tel:+15550000000" }
+  { label: "Phone", value: profile.phone, href: "tel:+919958737531" },
+  { label: "Location", value: profile.location, href: "https://www.google.com/maps/place/Delhi" },
+  { label: "University", value: "Cluster Innovation Centre, University of Delhi", href: "https://cic.du.ac.in/" }
 ];
