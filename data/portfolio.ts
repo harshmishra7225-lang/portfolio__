@@ -310,5 +310,7 @@ export const contactDetails = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}` },
   { label: "Phone", value: profile.phone, href: "tel:+919958737531" },
   { label: "Location", value: profile.location, href: "https://www.google.com/maps/place/Delhi" },
-  { label: "University", value: "Cluster Innovation Centre, University of Delhi", href: "https://cic.du.ac.in/" }
+  { label: "University", value: "Cluster Innovation Centre, University of Delhi", href: "https://cic.du.ac.in/" },
+  { label: "GitHub", value: "github.com/harshmishra7225-lang", href: "https://github.com/harshmishra7225-lang" },
+  { label: "LinkedIn", value: "linkedin.com/in/harsh-kumar-mishra-7938491b4", href: "https://www.linkedin.com/in/harsh-kumar-mishra-7938491b4/" }
 ];

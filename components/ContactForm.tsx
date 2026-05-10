@@ -66,7 +66,7 @@ export function ContactForm() {
   };
 
   return (
-    <Card className="p-6 sm:p-8">
+    <Card className="p-6 sm:p-8 shadow-[0_30px_80px_rgba(8,11,18,0.16)] ring-1 ring-slate-900/10">
       <form className="space-y-5" onSubmit={handleSubmit} noValidate>
         <div className="grid gap-5 sm:grid-cols-2">
           <Field
@@ -101,7 +101,7 @@ export function ContactForm() {
         />
 
         <div>
-          <label htmlFor="message" className="block text-sm font-semibold text-charcoal">
+          <label htmlFor="message" className="block text-sm font-semibold text-slate-700">
             Message
           </label>
           <textarea
@@ -109,12 +109,12 @@ export function ContactForm() {
             name="message"
             rows={6}
             value={values.message}
-            placeholder="Tell me a little about what you have in mind..."
+            placeholder="Tell me a little about the project, timeline or outcome you have in mind."
             aria-invalid={Boolean(touched.message && errors.message)}
             aria-describedby={touched.message && errors.message ? "message-error" : undefined}
             onBlur={() => setTouched((current) => ({ ...current, message: true }))}
             onChange={(event) => updateValue("message", event.target.value)}
-            className="focus-ring mt-2 min-h-40 w-full resize-y rounded-[8px] border border-ink/12 bg-white px-4 py-3 text-charcoal shadow-sm transition placeholder:text-charcoal/38 focus:border-teal"
+            className="focus-ring mt-2 min-h-40 w-full resize-y rounded-[16px] border border-slate-200 bg-white px-4 py-3 text-charcoal shadow-[0_14px_28px_rgba(15,23,42,0.08)] transition duration-200 placeholder:text-slate-400 focus:border-cyan focus:bg-white/95"
           />
           {touched.message && errors.message ? (
             <p id="message-error" className="mt-2 text-sm font-medium text-clay">
@@ -174,7 +174,7 @@ function Field({
         aria-describedby={error ? errorId : undefined}
         onBlur={onBlur}
         onChange={(event) => onChange(event.target.value)}
-        className="focus-ring mt-2 h-12 w-full rounded-[8px] border border-ink/12 bg-white px-4 text-charcoal shadow-sm transition placeholder:text-charcoal/38 focus:border-teal"
+        className="focus-ring mt-2 h-12 w-full rounded-[16px] border border-slate-200 bg-white px-4 text-charcoal shadow-[0_14px_28px_rgba(15,23,42,0.08)] transition duration-200 placeholder:text-slate-400 focus:border-cyan focus:bg-white/95"
       />
       {error ? (
         <p id={errorId} className="mt-2 text-sm font-medium text-clay">
