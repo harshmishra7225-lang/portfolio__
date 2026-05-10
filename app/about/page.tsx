@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { PageTransition } from "@/components/PageTransition";
 import { ProjectShowcase } from "@/components/ProjectShowcase";
@@ -30,18 +31,27 @@ export default function AboutPage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.08}>
-            <Card className="h-full bg-ink p-7 text-white sm:p-9">
+            <Card className="h-full bg-ink p-7 text-black sm:p-9">
               <p className="font-code text-sm font-bold uppercase text-cyan">
-                Snapshot
+                IT'S ME!!
               </p>
               <dl className="mt-6 space-y-5">
                 {storyHighlights.map((item) => (
                   <div key={item.label}>
-                    <dt className="text-sm text-white/55">{item.label}</dt>
+                    <dt className="text-sm text-black/55">{item.label}</dt>
                     <dd className="mt-1 text-lg font-medium">{item.value}</dd>
                   </div>
                 ))}
               </dl>
+              <div className="mt-8 overflow-hidden rounded-lg">
+                <Image
+                  src="/images/snapshot-pic.png"
+                  alt="Snapshot"
+                  width={400}
+                  height={300}
+                  className="w-full object-cover"
+                />
+              </div>
             </Card>
           </AnimatedSection>
         </div>

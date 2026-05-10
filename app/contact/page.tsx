@@ -40,10 +40,10 @@ export default function ContactPage() {
 
                 <div className="relative">
                   <p className="font-code text-sm uppercase tracking-[0.24em] text-cyan/70">Direct access</p>
-                  <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white">
+                  <h2 className="mt-3 text-3xl font-semibold tracking-tight text-black">
                     Contact details & trusted links
                   </h2>
-                  <p className="mt-5 max-w-2xl leading-7 text-white/72">
+                  <p className="mt-5 max-w-2xl leading-7 text-black/72">
                     I prefer clear, direct conversations. Use the channels below for robotics, AI/ML, cybersecurity or internship projects.
                   </p>
 
@@ -86,7 +86,7 @@ export default function ContactPage() {
           <AnimatedSection delay={0.08}>
             <div className="relative">
               <div className="pointer-events-none absolute -left-12 top-10 h-36 w-36 rounded-full bg-plum/10 blur-3xl" />
-              <ContactForm />
+              {/* <ContactForm /> */}
             </div>
           </AnimatedSection>
         </div>
