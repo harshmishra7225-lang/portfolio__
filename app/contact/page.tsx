@@ -41,9 +41,9 @@ export default function ContactPage() {
             </Card>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.08}>
+          {/* <AnimatedSection delay={0.08}>
             <ContactForm />
-          </AnimatedSection>
+          </AnimatedSection> */}
         </div>
       </section>
     </PageTransition>
