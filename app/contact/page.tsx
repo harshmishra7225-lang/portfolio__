@@ -1,5 +1,4 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { ContactForm } from "@/components/ContactForm";
 import { PageTransition } from "@/components/PageTransition";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
@@ -36,9 +35,9 @@ export default function ContactPage() {
           />
         </AnimatedSection>
 
-        <div className="mt-16 grid gap-10 xl:grid-cols-[0.98fr_1.02fr]">
+        <div className="mt-16 grid gap-10 justify-items-center">
           <AnimatedSection>
-            <div className="contact-hero relative rounded-[32px] bg-transparent p-0">
+            <div className="contact-hero relative mx-auto w-full max-w-3xl rounded-[32px] bg-transparent p-0">
               <Card className="contact-hero-card relative overflow-hidden border-0 bg-[#0b1428]/95 p-8 text-white shadow-[0_40px_120px_rgba(8,11,18,0.24)] ring-1 ring-white/10">
                 <div className="pointer-events-none absolute -right-16 top-8 h-40 w-40 rounded-full bg-cyan/15 blur-3xl" />
                 <div className="pointer-events-none absolute -left-16 top-36 h-56 w-56 rounded-full bg-sun/10 blur-3xl" />
@@ -85,13 +84,6 @@ export default function ContactPage() {
                   </div>
                 </div>
               </Card>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.08}>
-            <div className="relative">
-              <div className="pointer-events-none absolute -left-12 top-10 h-36 w-36 rounded-full bg-plum/10 blur-3xl" />
-              {/* <ContactForm /> */}
             </div>
           </AnimatedSection>
         </div>
