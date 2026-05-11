@@ -7,15 +7,20 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { contactDetails } from "@/data/portfolio";
 
 const socialLinks = [
+  // {
+  //   label: "GitHub",
+  //   value: "github.com/harshmishra7225-lang",
+  //   href: "https://github.com/harshmishra7225-lang"
+  // },
+  // {
+  //   label: "LinkedIn",
+  //   value: "linkedin.com/in/harsh-kumar-mishra-7938491b4",
+  //   href: "https://www.linkedin.com/in/harsh-kumar-mishra-7938491b4/"
+  // },
   {
-    label: "GitHub",
-    value: "github.com/harshmishra7225-lang",
-    href: "https://github.com/harshmishra7225-lang"
-  },
-  {
-    label: "LinkedIn",
-    value: "linkedin.com/in/harsh-kumar-mishra-7938491b4",
-    href: "https://www.linkedin.com/in/harsh-kumar-mishra-7938491b4/"
+    label: "Resume",
+    value: "Resume",
+    href: "https://drive.google.com/file/d/1JmpAjwSuFh0DivGwfyJVoLxYr8m1EYZP/view?usp=sharing"
   }
 ];
 
@@ -72,7 +77,7 @@ export default function ContactPage() {
                         key={link.label}
                         href={link.href}
                         variant="light"
-                        className="rounded-full bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-ink"
+                        className="rounded-full border border-white/20 bg-white text-ink px-5 py-3 text-sm font-semibold transition hover:bg-white hover:text-ink"
                       >
                         {link.label}
                       </Button>

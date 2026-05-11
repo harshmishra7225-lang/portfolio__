@@ -21,7 +21,26 @@ export default function AboutPage() {
         <div className="mt-12 grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
           <AnimatedSection>
             <Card className="p-7 sm:p-9">
-              <h2 className="font-display text-3xl font-semibold text-ink">Personal Introduction</h2>
+              <h2 className="font-display text-3xl font-semibold text-ink">
+                Personal Introduction
+              </h2>
+
+              <div className="mt-4 space-y-2">
+                <p className="text-base font-semibold text-ink">
+                  Founder — Marcus, The Quizzing Society of CIC (DU)
+                </p>
+
+                <p className="text-sm text-charcoal/75">
+                  <span className="font-semibold text-ink">Languages Spoken:</span>{" "}
+                  Hindi, English, French (Basic)
+                </p>
+
+                <p className="text-sm text-charcoal/75">
+                  <span className="font-semibold text-ink">Dialects Known:</span>{" "}
+                  Bhojpuri
+                </p>
+              </div>
+
               <div className="mt-6 space-y-5 text-base leading-8 text-charcoal/78">
                 <p>{profile.aboutIntro}</p>
                 <p>{profile.background}</p>
