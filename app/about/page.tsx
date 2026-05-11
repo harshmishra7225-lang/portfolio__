@@ -31,13 +31,21 @@ export default function AboutPage() {
                 </p>
 
                 <p className="text-sm text-charcoal/75">
-                  <span className="font-semibold text-ink">Languages Spoken:</span>{" "}
+                  <span className="font-semibold text-ink">
+                    Languages Spoken:
+                  </span>{" "}
                   Hindi, English, French (Basic)
                 </p>
 
                 <p className="text-sm text-charcoal/75">
-                  <span className="font-semibold text-ink">Dialects Known:</span>{" "}
+                  <span className="font-semibold text-ink">
+                    Dialects Known:
+                  </span>{" "}
                   Bhojpuri
+                </p>
+
+                <p className="text-base font-bold text-ink">
+                  Currently a Cybersecurity Intern at Innovatiview India Ltd.
                 </p>
               </div>
 
@@ -58,10 +66,13 @@ export default function AboutPage() {
                 {storyHighlights.map((item) => (
                   <div key={item.label}>
                     <dt className="text-sm text-black/55">{item.label}</dt>
-                    <dd className="mt-1 text-lg font-medium">{item.value}</dd>
+                    <dd className="mt-1 text-lg font-medium">
+                      {item.value}
+                    </dd>
                   </div>
                 ))}
               </dl>
+
               <div className="mt-8 overflow-hidden rounded-lg">
                 <Image
                   src="/images/snapshot-pic.png"
@@ -83,17 +94,27 @@ export default function AboutPage() {
             title="Education, internships and technical highlights"
             description="A few moments that show steady growth across research, AI/ML, robotics, IoT and software systems."
           />
+
           <div className="mt-10 space-y-5">
             {milestones.map((item) => (
-              <Card key={item.year} className="grid gap-5 p-6 sm:grid-cols-[120px_1fr]">
+              <Card
+                key={item.year}
+                className="grid gap-5 p-6 sm:grid-cols-[120px_1fr]"
+              >
                 <div>
                   <p className="rounded-full bg-electric/10 px-4 py-2 text-center text-sm font-semibold text-electric">
                     {item.year}
                   </p>
                 </div>
+
                 <div>
-                  <h3 className="text-xl font-semibold text-ink">{item.title}</h3>
-                  <p className="mt-3 leading-7 text-charcoal/75">{item.description}</p>
+                  <h3 className="text-xl font-semibold text-ink">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-3 leading-7 text-charcoal/75">
+                    {item.description}
+                  </p>
                 </div>
               </Card>
             ))}
@@ -109,6 +130,7 @@ export default function AboutPage() {
             description="A concise view of the strongest resume projects, shaped for a recruiter or technical reviewer to scan quickly."
             inverse
           />
+
           <div className="mt-10">
             <ProjectShowcase />
           </div>
